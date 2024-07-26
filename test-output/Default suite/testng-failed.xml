@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runtest.PlaceOrderTest">
+      <class name="runtest.RunTest">
         <methods>
+          <include name="tearDown"/>
           <include name="checkout"/>
           <include name="order"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- runtest.PlaceOrderTest -->
+      </class> <!-- runtest.RunTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

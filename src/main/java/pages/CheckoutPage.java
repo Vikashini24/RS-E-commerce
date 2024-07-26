@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Wait;
 
 import utils.Waits;
 
@@ -50,7 +51,7 @@ public class CheckoutPage extends BasePage{
 	
 	public void getCountry(String countryName) {
 		wait.implicitWait();
-		country.sendKeys("ind");
+		country.sendKeys("india");
 		for (WebElement countries : countryList) {
 			if(countries.getText().equalsIgnoreCase(countryName)) {
 				countries.click();

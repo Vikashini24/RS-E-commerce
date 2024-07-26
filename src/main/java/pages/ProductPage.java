@@ -46,7 +46,7 @@ public class ProductPage extends BasePage{
 			addToCart.click();
 		}
 		wait.visibilityOfElement(addedNote);
-		System.out.println("Product added notice: " + addedNote);
+		System.out.println("Product added notice: " + addedNote.getText());
 	}
 	
 	public void clickCart() {

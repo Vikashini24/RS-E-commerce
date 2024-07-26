@@ -1,6 +1,5 @@
 package pages;
 
-import java.util.NoSuchElementException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,14 +27,11 @@ public class CartPage extends BasePage {
 	
 	public CartPage(WebDriver driver) {
 		super(driver);
-		//new BasePage(driver);
-		//this.abstractcomponant = new AbstractComponants(driver);
-
 	}
 	
 	public void checkCart() {
-			//wait.visibilityOfElement(checkoutButton);
-			wait.elemenyToBeClickable(checkoutButton);
+			wait.visibilityOfElement(checkoutButton);
+			//wait.elemenyToBeClickable(checkoutButton);
 			System.out.println("Checkout button is visible: " + checkoutButton.isDisplayed());
 			System.out.println("Checkout button is enabled: " + checkoutButton.isEnabled());
 			abstractcomponant.action(checkoutButton);
